@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/svg+xml" href="resources/favicon.svg">
+		<link rel="icon" type="image/png" href="resources/favicon.png">
+
+		<!-- Bootstrap CSS -->
+		<link href="resources/style.css" rel="stylesheet">
+
+		<!-- Title -->
+		<title>Wolff</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-md navbar-light border-bottom">  <!-- pt-5 pb-4 border-bottom mb-5 -->
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Sebastian Wolff</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="navbar-nav font-monospace ms-auto">
+						<a class="nav-link active" aria-current="page" href="index.html">/home/wolff</a>
+						<a class="nav-link" href="random.html">/dev/random</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Content -->
+		<main class="container">
+
+			<!-- About -->
+			<div class="content about">
+				<div class="row">
+					<div class="col-md-4 about-side">
+						<div class="row">
+							<div class="col-6 col-sm-5 col-md-12">
+								<div class="about-img p-2 pt-3 pb-4">
+									<img class="rounded-circle border" src="resources/photo.jpeg">
+								</div>
+							</div>
+							<div class="col-6 col-sm-7 col-md-12 ps-md-4">
+								<div class="contact-head">Contact:</div>
+								<div class="row contact-detail">
+									<div class="col col-icon"><i class="fas fa-envelope"></i></div>
+									<div class="col"><span class="email">sebastian.wolff </span></div>
+								</div>
+								<!-- <div class="row contact-detail">
+									<div class="col col-icon"><i class="fas fa-phone"></i></div>
+									<div class="col"><span class="phone">555-777</span></div>
+								</div> -->
+								<div class="row contact-detail">
+									<div class="col col-icon"><i class="fas fa-map-marker-alt"></i></div>
+									<div class="col">
+										<address>
+											60 Fifth Avenue<br>
+											Room 444<br>
+											New York, NY 10011<br>
+											<small><a href="https://goo.gl/maps/tznxCBet1Xx7v7Lf6">(map)</a></small>
+										</address>
+									</div>
+								</div>
+								<div class="container contact-more">
+									<a href="https://dblp.org/pid/169/9520.html"><i class="ai ai-dblp-square ai-2x"></i></a>
+									<!-- <a href="https://www.researchgate.net/profile/Sebastian-Wolff-3"><i class="ai ai-researchgate-square ai-2x"></i></a> -->
+									<!-- <a href="#"><i class="ai ai-google-scholar-square ai-2x"></i></a> -->
+									<a href="https://github.com/Wolff09"><i class="fab fa-github fa-2x"></i></a>
+									<a href="https://de.linkedin.com/in/swolff09"><i class="fab fa-linkedin fa-2x"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 about-main p-3">
+						<h1>About Me</h1>
+						<p class="lead">
+							I'm a <a href="https://www.simonsfoundation.org/simons-society-of-fellows/people/?type=junior">Junior Fellow</a> of the <a href="https://www.simonsfoundation.org/">Simons Foundation</a> and post-doctoral researcher in the <a href="https://cs.nyu.edu/acsys/">Analysis of Computer Systems Group</a> at <a href="https://cims.nyu.edu/">New York University's Courant Institute</a>, working with <a href="https://cs.nyu.edu/~wies/">Thomas Wies</a>.
+							Before, I obtained my <a href="https://wolff09.github.io/phd/">PhD</a> from the <a href="https://www.tu-braunschweig.de/en/">University of Braunschweig</a>, Germany, under the supervision of <a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Roland Meyer</a>.
+						</p>
+						<p class="lead">
+							My research revolves around the analysis and verification of concurrent programs.
+							I am specifically interested in the automated verification of high-performance data structures.
+							During my PhD, I have contemplated about the manual memory management aspect of non-blocking data structures and how to verify it separately.
+							Currently, I am focusing on progressing the state of the art in automatic verifiers for garbage collected data structures.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Publications -->
+			<div class="content publications">
+				<h1>Publications</h1>
+				<!-- 
+
+					MOVE PDFS
+
+				 -->
+				<ol class="pub-list">
+					<li class="pub-item">
+						<h6>Verifying Non-blocking Data Structures with Manual Memory Management</h6>
+						<span class="me">Sebastian Wolff</span>
+						<br>
+						PhD thesis, 2021
+						<div class="links">
+							<a class="pdf" href="https://wolff09.github.io/phd/wolff2021.pdf">PDF</a>
+							<!-- <a class="talk" href="">Slides</a> -->
+							<!-- <a class="link" href="https://wolff09.github.io/phd/">Deposited Version</a> -->
+							<a class="other" href="https://wolff09.github.io/phd/">Additional Material</a>
+						</div>
+					</li>
+					<li class="pub-item">
+						<h6>Pointer Life Cycle Types for Lock-Free Data Structures with Memory Reclamation</h6>
+						<a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Roland Meyer</a>
+						and <span class="me">Sebastian Wolff</span>
+						<br>
+						POPL 2020
+						<div class="links">
+							<a class="pdf" href="https://wolff09.github.io/seal/resources/POPL20MeyerWolff.pdf">PDF</a>
+							<a class="arxiv" href="http://arxiv.org/abs/1910.11714">arXiv</a>
+							<a class="doi" href="http://dx.doi.org/10.1145/3371136">DOI</a>
+							<a class="talk" href="https://wolff09.github.io/seal/resources/POPL20MeyerWolff_slides.pdf">Slides</a>
+							<a class="link" href="https://wolff09.github.io/seal/">Project Page</a>
+						</div>
+					</li>
+					<li class="pub-item">
+						<h6>Decoupling Lock-Free Data Structures from Memory Reclamation for Static Analysis</h6>
+						<a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Roland Meyer</a>
+						and <span class="me">Sebastian Wolff</span>
+						<br>
+						POPL 2019
+						<div class="links">
+							<a class="pdf" href="http://www.tcs.cs.tu-bs.de/group/wolff/doc/popl19/popl19-MeyerWolff.pdf">PDF</a>
+							<a class="arxiv" href="http://arxiv.org/abs/1810.10807">arXiv</a>
+							<a class="doi" href="http://dx.doi.org/10.1145/3290371">DOI</a>
+							<a class="talk" href="http://www.tcs.cs.tu-bs.de/group/wolff/doc/popl19/popl19-MeyerWolff-slides.pdf">Slides</a>
+							<a class="link" href="https://wolff09.github.io/TMRexp/">Project Page</a>
+						</div>
+					</li>
+					<li class="pub-item">
+						<h6>Reasoning About Weak Semantics via Strong Semantics</h6>
+						<a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Roland Meyer</a>
+						and <span class="me">Sebastian Wolff</span>
+						<br>
+						Principled Software Development&mdash;Essays Dedicated to Arnd Poetzsch-Heffter on the Occasion of his 60th Birthday, 2018
+						<div class="links">
+							<a class="pdf" href="http://www.tcs.cs.tu-bs.de/group/wolff/doc/MeyerWolff_Arnd60.pdf">PDF</a>
+							<a class="doi" href="http://dx.doi.org/10.1007/978-3-319-98047-8_18">DOI</a>
+						</div>
+					</li>
+					<li class="pub-item">
+						<h6>Effect Summaries for Thread-Modular Analysis</h6>
+						<a href="http://www.fit.vutbr.cz/~holik/">Lukáš Holík</a>,
+						<a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Roland Meyer</a>,
+						<a href="http://www.fit.vutbr.cz/~vojnar/">Tomáš Vojnar</a>,
+						and <span class="me">Sebastian Wolff</span>
+						<br>
+						SAS 2017
+						<div class="links">
+							<a class="pdf" href="http://www.tcs.cs.tu-bs.de/group/wolff/doc/HHVW_SAS17.pdf">PDF</a>
+							<a class="arxiv" href="https://arxiv.org/abs/1705.03701">arXiv</a>
+							<a class="doi" href="http://dx.doi.org/10.1007/978-3-319-66706-5_9">DOI</a>
+							<a class="talk" href="http://www.tcs.cs.tu-bs.de/group/wolff/doc/HHVW_SAS17_slides.pdf">Slides</a>
+							<a class="code" href="https://github.com/Wolff09/TMRexp/releases/SAS17">Code</a>
+						</div>
+					</li>
+					<li class="pub-item">
+						<h6>Pointer Race Freedom</h6>
+						<a href="http://www.it.uu.se/katalog/daz">Frédéric Haziza</a>,
+						<a href="http://www.fit.vutbr.cz/~holik/">Lukáš Holík</a>,
+						<a href="https://www.tcs.cs.tu-bs.de/group/meyer/home.html">Roland Meyer</a>
+						and <span class="me">Sebastian Wolff</span>
+						<br>
+						VMCAI 2016
+						<div class="links">
+							<a class="pdf" href="http://www.tcs.cs.tu-bs.de/documents/HHMWVMCAI2016.pdf">PDF</a>
+							<a class="arxiv" href="https://arxiv.org/abs/1511.00184">arXiv</a>
+							<a class="doi" href="http://dx.doi.org/10.1007/978-3-662-49122-5_19">DOI</a>
+						</div>
+					</li>
+				</ol>
+			</div>
+
+			<!-- Professional activities -->
+			<!-- <div class="content activities">
+				<h1>Professional Activities</h1>
+			</div> -->
+		</main>
+
+		<!-- Bootstrap JavaScript -->
+		<!-- TODO: more lightweight js -->
+		<script src="resources/bootstrap.bundle.min.js" async></script>
+	</body>
+</html>

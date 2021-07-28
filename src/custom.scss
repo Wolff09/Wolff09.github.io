@@ -1,0 +1,227 @@
+
+// icons
+$ai-font-path: "webfonts/academicons/"; // relitive to final .css
+@import "../src/academicons/academicons.scss";
+
+$fa-font-path: "webfonts/fontawesome"; // relitive to final .css
+@import "../src/fontawesome/scss/fontawesome.scss";
+@import "../src/fontawesome/scss/solid.scss";
+@import "../src/fontawesome/scss/brands.scss";
+
+// solarized
+$solar-base03:    #002b36;
+$solar-base02:    #073642;
+$solar-base01:    #586e75;
+$solar-base00:    #657b83;
+$solar-base0:     #839496;
+$solar-base1:     #93a1a1;
+$solar-base2:     #eee8d5;
+$solar-base3:     #fdf6e3;
+$solar-yellow:    #b58900;
+$solar-orange:    #cb4b16;
+$solar-red:       #dc322f;
+$solar-magenta:   #d33682;
+$solar-violet:    #6c71c4;
+$solar-blue:      #268bd2;
+$solar-cyan:      #2aa198;
+$solar-green:     #859900;
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../src/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$body-bg:                   tint-color($solar-base3, 50%);
+$primary:                   $solar-orange;
+$body-color:                $solar-base03;
+$link-decoration:           none;
+$link-hover-decoration:     underline;
+$headings-line-height:      1.4;
+$font-size-base:            1rem;
+$h1-font-size:              $font-size-base * 1.75;
+$h2-font-size:              $font-size-base * 1.5;
+$h3-font-size:              $font-size-base * 1.25;
+$h4-font-size:              $font-size-base;
+$h5-font-size:              $font-size-base;
+$h6-font-size:              $font-size-base;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../src/bootstrap/scss/variables";
+@import "../src/bootstrap/scss/mixins";
+@import "../src/bootstrap/scss/utilities";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../src/bootstrap/scss/root";
+@import "../src/bootstrap/scss/reboot";
+@import "../src/bootstrap/scss/type";
+@import "../src/bootstrap/scss/images";
+@import "../src/bootstrap/scss/containers";
+@import "../src/bootstrap/scss/grid";
+
+// @import "../src/bootstrap/scss/tables";
+// @import "../src/bootstrap/scss/forms";
+// @import "../src/bootstrap/scss/buttons";
+@import "../src/bootstrap/scss/transitions";
+// @import "../src/bootstrap/scss/dropdown";
+// @import "../src/bootstrap/scss/button-group";
+@import "../src/bootstrap/scss/nav";
+@import "../src/bootstrap/scss/navbar";
+// @import "../src/bootstrap/scss/card";
+// @import "../src/bootstrap/scss/accordion";
+// @import "../src/bootstrap/scss/breadcrumb";
+// @import "../src/bootstrap/scss/pagination";
+@import "../src/bootstrap/scss/badge";
+// @import "../src/bootstrap/scss/alert";
+// @import "../src/bootstrap/scss/progress";
+// @import "../src/bootstrap/scss/list-group";
+// @import "../src/bootstrap/scss/close";
+// @import "../src/bootstrap/scss/toasts";
+// @import "../src/bootstrap/scss/modal";
+// @import "../src/bootstrap/scss/tooltip";
+// @import "../src/bootstrap/scss/popover";
+// @import "../src/bootstrap/scss/carousel";
+// @import "../src/bootstrap/scss/spinners";
+// @import "../src/bootstrap/scss/offcanvas";
+
+@import "../src/bootstrap/scss/helpers";
+@import "../src/bootstrap/scss/utilities/api";
+
+// 5. Add additional custom code here
+
+body {
+	overflow-y: scroll;
+}
+
+.container {
+	max-width: map-get($container-max-widths, "lg");
+}
+
+.navbar {
+	
+	margin-top: $spacer * 2.5;
+	margin-bottom: $spacer * 1.0;
+
+	.navbar-brand {
+		font-size: $font-size-base * 1.75;
+		font-weight: $font-weight-light;
+	}
+
+	.navbar-nav {
+		font-size: $font-size-sm;
+
+		a.nav-link:hover {
+			color: $link-hover-color;
+			text-decoration: $link-hover-decoration;
+		}
+	}
+}
+
+.content {
+	@include make-container();
+	margin-top: 2rem;
+
+	& h1 {
+		color: $solar-base02;
+	}
+	& h1::before {
+		color: $text-muted;
+		content: "# ";
+	}
+
+	h1, h2, h3 {
+		text-transform: lowercase;
+	}
+}
+
+.about {
+	.about-img {
+		// text-align: center;
+		img {
+			width: 85%;
+			max-width: 13rem;
+		}
+	}
+
+	.contact-head {
+		font-weight: $font-weight-bold;
+	}
+
+	.contact-detail {
+		padding-top: .5rem;
+
+		&:hover, &:hover a { color: $link-hover-color; }
+		span.phone::before { content: "+1 (212) "; }
+		span.email::after { content: "(at) nyu.edu"; white-space: nowrap; }
+		// span.email::after { content: "@nyu.edu"; }
+		address { margin: 0; }
+
+		.col-icon {
+			min-width: 2.5rem;
+			max-width: 2.5rem;
+		}
+	}
+
+	.contact-more {
+		padding: .75rem 0rem;
+		// text-align: center;
+
+		a { color: inherit; }
+		a:hover { color: $link-hover-color; }
+		.ai, .fab, .fas { padding: 0rem .2rem; }
+	}
+}
+
+.publications, .curatedlist {
+	.pub-item {
+		padding-bottom: .75rem;
+		line-height: $line-height-base * 1.1;
+    	counter-increment: pubCounter;
+		padding-left: .25rem;
+		list-style: decimal-leading-zero;
+
+		h1, h2, h3, h4, h5, h6 {
+			font-size: $font-size-base;
+			font-weight: $font-weight-bold;
+			margin: 0;
+			padding: 0;
+		}
+
+		& > a {
+			color: $body-color;
+			&:hover { color: $btn-link-hover-color; }
+		}
+
+		.links a {
+			@extend .badge;
+			&:empty { display: inline-block; }
+			background: shade-color($solar-base2, 5%);
+			color: shade-color($solar-base01, 15%);
+			padding: .3rem .4rem;
+
+			&.pdf:before, &.talk:before, &.code:before, &.link:before {
+				@extend %fa-icon;
+  				@extend .fa;
+  				padding-right: .1rem;
+			}
+			&.arxiv:before, &.doi:before {
+				@extend .ai;
+				padding-right: .1rem;
+			}
+			&.pdf { color: $solar-orange; }
+			&.pdf:before{ content: fa-content($fa-var-file-pdf); }
+			&.talk:before { content: fa-content($fa-var-eye); }
+			&.code:before { content: fa-content($fa-var-code); }
+			&.link:before { content: fa-content($fa-var-link); }
+			&.arxiv:before { @extend .ai-arxiv; }
+			&.doi:before { @extend .ai-doi; }
+
+			&:hover {
+				// background: $link-hover-color;
+				background: tint-color($solar-base2, 15%);
+				text-decoration: none;
+				color: $link-hover-color;
+			}
+		}
+	}
+}
+
+
