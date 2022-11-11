@@ -192,8 +192,9 @@ body {
 
 		.note {
 			.award {
+				$award-link-color: $solar-magenta;
+				color: $award-link-color;
 				font-weight: bold;
-				color: $solar-orange;
 				font-size: .9rem;
 
 				&:before {
@@ -205,7 +206,19 @@ body {
 
 				&:hover {
 					text-decoration: none;
-					color: $link-hover-color;
+					color: shift-color($award-link-color, $link-shade-percentage)
+				}
+			}
+
+			.artifact {
+				color: $solar-base00;
+				font-size: .9rem;
+
+				&:before {
+					@extend %fa-icon;
+	  				@extend .fa;
+	  				content: fa-content($fa-var-ribbon);
+	  				padding-right: .1rem;
 				}
 			}
 		}
