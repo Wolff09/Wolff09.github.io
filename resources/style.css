@@ -13,7 +13,7 @@
   src: url("webfonts/academicons//academicons.eot");
   src: url("webfonts/academicons//academicons.eot") format("embedded-opentype"), url("webfonts/academicons//academicons.ttf") format("truetype"), url("webfonts/academicons//academicons.woff") format("woff"), url("webfonts/academicons//academicons.svg") format("svg");
 }
-.ai, .publications .pub-item .links a.arxiv:before, .publications .pub-item .links a.doi:before, .curatedlist .pub-item .links a.arxiv:before, .curatedlist .pub-item .links a.doi:before {
+.ai, .publications .pub-item .links a.arxiv:before, .publications .pub-item .links a.doi:before, .publications .pub-item .links a.zenodo:before, .curatedlist .pub-item .links a.arxiv:before, .curatedlist .pub-item .links a.doi:before, .curatedlist .pub-item .links a.zenodo:before {
   font-family: "Academicons";
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
@@ -545,7 +545,7 @@
   content: "\e921";
 }
 
-.ai-zenodo:before {
+.ai-zenodo:before, .publications .pub-item .links a.zenodo:before, .curatedlist .pub-item .links a.zenodo:before {
   content: "\e911";
 }
 
@@ -649,11 +649,11 @@
   float: right;
 }
 
-.ai.ai-pull-left, .publications .pub-item .links a.ai-pull-left.arxiv:before, .publications .pub-item .links a.ai-pull-left.doi:before, .curatedlist .pub-item .links a.ai-pull-left.arxiv:before, .curatedlist .pub-item .links a.ai-pull-left.doi:before {
+.ai.ai-pull-left, .publications .pub-item .links a.ai-pull-left.arxiv:before, .publications .pub-item .links a.ai-pull-left.doi:before, .publications .pub-item .links a.ai-pull-left.zenodo:before, .curatedlist .pub-item .links a.ai-pull-left.arxiv:before, .curatedlist .pub-item .links a.ai-pull-left.doi:before, .curatedlist .pub-item .links a.ai-pull-left.zenodo:before {
   margin-right: 0.3em;
 }
 
-.ai.ai-pull-right, .publications .pub-item .links a.ai-pull-right.arxiv:before, .publications .pub-item .links a.ai-pull-right.doi:before, .curatedlist .pub-item .links a.ai-pull-right.arxiv:before, .curatedlist .pub-item .links a.ai-pull-right.doi:before {
+.ai.ai-pull-right, .publications .pub-item .links a.ai-pull-right.arxiv:before, .publications .pub-item .links a.ai-pull-right.doi:before, .publications .pub-item .links a.ai-pull-right.zenodo:before, .curatedlist .pub-item .links a.ai-pull-right.arxiv:before, .curatedlist .pub-item .links a.ai-pull-right.doi:before, .curatedlist .pub-item .links a.ai-pull-right.zenodo:before {
   margin-right: 0.3em;
 }
 
@@ -12897,6 +12897,10 @@ body {
   overflow-y: scroll;
 }
 
+main {
+  padding-bottom: 2em;
+}
+
 .container {
   max-width: 960px;
 }
@@ -12972,7 +12976,7 @@ body {
 .about .contact-more a:hover {
   color: #a23c12;
 }
-.about .contact-more .ai, .about .contact-more .publications .pub-item .links a.arxiv:before, .publications .pub-item .links .about .contact-more a.arxiv:before, .about .contact-more .publications .pub-item .links a.doi:before, .publications .pub-item .links .about .contact-more a.doi:before, .about .contact-more .curatedlist .pub-item .links a.arxiv:before, .curatedlist .pub-item .links .about .contact-more a.arxiv:before, .about .contact-more .curatedlist .pub-item .links a.doi:before, .curatedlist .pub-item .links .about .contact-more a.doi:before, .about .contact-more .fab, .about .contact-more .fas {
+.about .contact-more .ai, .about .contact-more .publications .pub-item .links a.arxiv:before, .publications .pub-item .links .about .contact-more a.arxiv:before, .about .contact-more .publications .pub-item .links a.doi:before, .publications .pub-item .links .about .contact-more a.doi:before, .about .contact-more .publications .pub-item .links a.zenodo:before, .publications .pub-item .links .about .contact-more a.zenodo:before, .about .contact-more .curatedlist .pub-item .links a.arxiv:before, .curatedlist .pub-item .links .about .contact-more a.arxiv:before, .about .contact-more .curatedlist .pub-item .links a.doi:before, .curatedlist .pub-item .links .about .contact-more a.doi:before, .about .contact-more .curatedlist .pub-item .links a.zenodo:before, .curatedlist .pub-item .links .about .contact-more a.zenodo:before, .about .contact-more .fab, .about .contact-more .fas {
   padding: 0rem 0.2rem;
 }
 
@@ -12989,10 +12993,10 @@ body {
   margin: 0;
   padding: 0;
 }
-.publications .pub-item > a, .curatedlist .pub-item > a {
+.publications .pub-item .authors > a, .curatedlist .pub-item .authors > a {
   color: #002b36;
 }
-.publications .pub-item > a:hover, .curatedlist .pub-item > a:hover {
+.publications .pub-item .authors > a:hover, .curatedlist .pub-item .authors > a:hover {
   color: #a23c12;
 }
 .publications .pub-item .note .award, .curatedlist .pub-item .note .award {
@@ -13016,6 +13020,9 @@ body {
   content: "\f4d6";
   padding-right: 0.1rem;
 }
+.publications .pub-item .venue, .curatedlist .pub-item .venue {
+  font-style: italic;
+}
 .publications .pub-item .links a, .curatedlist .pub-item .links a {
   background: #e2dcca;
   color: #4b5e63;
@@ -13027,7 +13034,7 @@ body {
 .publications .pub-item .links a.pdf:before, .publications .pub-item .links a.talk:before, .publications .pub-item .links a.code:before, .publications .pub-item .links a.link:before, .curatedlist .pub-item .links a.pdf:before, .curatedlist .pub-item .links a.talk:before, .curatedlist .pub-item .links a.code:before, .curatedlist .pub-item .links a.link:before {
   padding-right: 0.1rem;
 }
-.publications .pub-item .links a.arxiv:before, .publications .pub-item .links a.doi:before, .curatedlist .pub-item .links a.arxiv:before, .curatedlist .pub-item .links a.doi:before {
+.publications .pub-item .links a.arxiv:before, .publications .pub-item .links a.doi:before, .publications .pub-item .links a.zenodo:before, .curatedlist .pub-item .links a.arxiv:before, .curatedlist .pub-item .links a.doi:before, .curatedlist .pub-item .links a.zenodo:before {
   padding-right: 0.1rem;
 }
 .publications .pub-item .links a.pdf, .curatedlist .pub-item .links a.pdf {

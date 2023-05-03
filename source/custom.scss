@@ -91,6 +91,10 @@ body {
 	overflow-y: scroll;
 }
 
+main {
+	padding-bottom: 2em;
+}
+
 .container {
 	max-width: map-get($container-max-widths, "lg");
 }
@@ -185,7 +189,7 @@ body {
 			padding: 0;
 		}
 
-		& > a {
+		.authors > a {
 			color: $body-color;
 			&:hover { color: $btn-link-hover-color; }
 		}
@@ -223,6 +227,10 @@ body {
 			}
 		}
 
+		.venue {
+			font-style: italic;
+		}
+
 		.links a {
 			@extend .badge;
 			&:empty { display: inline-block; }
@@ -235,7 +243,7 @@ body {
   				@extend .fa;
   				padding-right: .1rem;
 			}
-			&.arxiv:before, &.doi:before {
+			&.arxiv:before, &.doi:before, &.zenodo:before {
 				@extend .ai;
 				padding-right: .1rem;
 			}
@@ -246,6 +254,7 @@ body {
 			&.link:before { content: fa-content($fa-var-link); }
 			&.arxiv:before { @extend .ai-arxiv; }
 			&.doi:before { @extend .ai-doi; }
+			&.zenodo:before { @extend .ai-zenodo; }
 
 			&:hover {
 				// background: $link-hover-color;
