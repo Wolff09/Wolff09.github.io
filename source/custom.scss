@@ -70,7 +70,7 @@ $h6-font-size:              $font-size-base;
 // @import "../source/bootstrap/scss/breadcrumb";
 // @import "../source/bootstrap/scss/pagination";
 @import "../source/bootstrap/scss/badge";
-// @import "../source/bootstrap/scss/alert";
+@import "../source/bootstrap/scss/alert";
 // @import "../source/bootstrap/scss/progress";
 // @import "../source/bootstrap/scss/list-group";
 // @import "../source/bootstrap/scss/close";
@@ -100,7 +100,6 @@ main {
 }
 
 .navbar {
-	
 	margin-top: $spacer * 2.5;
 	margin-bottom: $spacer * 1.0;
 
@@ -172,6 +171,67 @@ main {
 		a:hover { color: $link-hover-color; }
 		.ai, .fab, .fas { padding: 0rem .2rem; }
 	}
+
+	.shout {
+		@extend .lead;
+		@extend .alert;
+		@extend .alert-info;
+		@extend .text-center;
+		background-color: tint-color($solar-green, 80%);
+		border-color: tint-color($solar-green, 40%);
+
+		.links {
+			margin-top: .5rem;
+
+			a {
+				@extend .badge;
+				&:empty { display: inline-block; }
+				background: shade-color($solar-green, 0%);
+				color: tint-color($solar-base3, 20%);
+				font-size: 1rem;
+				padding: .6rem 1rem;
+
+				&.pdf:before {
+					@extend %fa-icon;
+	  				@extend .fa;
+	  				padding-right: .4rem;
+	  				content: fa-content($fa-var-file-pdf);
+				}
+			}
+		}
+	}
+	// .links a {
+	// 		@extend .badge;
+	// 		&:empty { display: inline-block; }
+	// 		background: shade-color($solar-base2, 5%);
+	// 		color: shade-color($solar-base01, 15%);
+	// 		padding: .3rem .4rem;
+
+	// 		&.pdf:before, &.talk:before, &.code:before, &.link:before {
+	// 			@extend %fa-icon;
+  	// 			@extend .fa;
+  	// 			padding-right: .1rem;
+	// 		}
+	// 		&.arxiv:before, &.doi:before, &.zenodo:before {
+	// 			@extend .ai;
+	// 			padding-right: .1rem;
+	// 		}
+	// 		&.pdf { color: $solar-orange; }
+	// 		&.pdf:before{ content: fa-content($fa-var-file-pdf); }
+	// 		&.talk:before { content: fa-content($fa-var-eye); }
+	// 		&.code:before { content: fa-content($fa-var-code); }
+	// 		&.link:before { content: fa-content($fa-var-link); }
+	// 		&.arxiv:before { @extend .ai-arxiv; }
+	// 		&.doi:before { @extend .ai-doi; }
+	// 		&.zenodo:before { @extend .ai-zenodo; }
+
+	// 		&:hover {
+	// 			// background: $link-hover-color;
+	// 			background: tint-color($solar-base2, 15%);
+	// 			text-decoration: none;
+	// 			color: $link-hover-color;
+	// 		}
+	// 	}
 }
 
 .publications, .curatedlist {

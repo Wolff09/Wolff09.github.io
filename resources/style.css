@@ -690,7 +690,7 @@
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-.fa, .publications .pub-item .links a.pdf:before, .publications .pub-item .links a.talk:before, .publications .pub-item .links a.code:before, .publications .pub-item .links a.link:before, .curatedlist .pub-item .links a.pdf:before, .curatedlist .pub-item .links a.talk:before, .curatedlist .pub-item .links a.code:before, .curatedlist .pub-item .links a.link:before, .publications .pub-item .note .artifact:before, .curatedlist .pub-item .note .artifact:before, .publications .pub-item .note .award:before, .curatedlist .pub-item .note .award:before,
+.fa, .publications .pub-item .links a.pdf:before, .publications .pub-item .links a.talk:before, .publications .pub-item .links a.code:before, .publications .pub-item .links a.link:before, .curatedlist .pub-item .links a.pdf:before, .curatedlist .pub-item .links a.talk:before, .curatedlist .pub-item .links a.code:before, .curatedlist .pub-item .links a.link:before, .publications .pub-item .note .artifact:before, .curatedlist .pub-item .note .artifact:before, .publications .pub-item .note .award:before, .curatedlist .pub-item .note .award:before, .about .shout .links a.pdf:before,
 .fas,
 .far,
 .fal,
@@ -705,7 +705,7 @@
   line-height: 1;
 }
 
-.publications .pub-item .links a.pdf:before, .publications .pub-item .links a.talk:before, .publications .pub-item .links a.code:before, .publications .pub-item .links a.link:before, .curatedlist .pub-item .links a.pdf:before, .curatedlist .pub-item .links a.talk:before, .curatedlist .pub-item .links a.code:before, .curatedlist .pub-item .links a.link:before, .publications .pub-item .note .artifact:before, .curatedlist .pub-item .note .artifact:before, .publications .pub-item .note .award:before, .curatedlist .pub-item .note .award:before {
+.publications .pub-item .links a.pdf:before, .publications .pub-item .links a.talk:before, .publications .pub-item .links a.code:before, .publications .pub-item .links a.link:before, .curatedlist .pub-item .links a.pdf:before, .curatedlist .pub-item .links a.talk:before, .curatedlist .pub-item .links a.code:before, .curatedlist .pub-item .links a.link:before, .publications .pub-item .note .artifact:before, .curatedlist .pub-item .note .artifact:before, .publications .pub-item .note .award:before, .curatedlist .pub-item .note .award:before, .about .shout .links a.pdf:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -805,14 +805,14 @@
   float: right;
 }
 
-.fa.fa-pull-left, .publications .pub-item .links a.fa-pull-left.pdf:before, .publications .pub-item .links a.fa-pull-left.talk:before, .publications .pub-item .links a.fa-pull-left.code:before, .publications .pub-item .links a.fa-pull-left.link:before, .curatedlist .pub-item .links a.fa-pull-left.pdf:before, .curatedlist .pub-item .links a.fa-pull-left.talk:before, .curatedlist .pub-item .links a.fa-pull-left.code:before, .curatedlist .pub-item .links a.fa-pull-left.link:before, .publications .pub-item .note .fa-pull-left.artifact:before, .curatedlist .pub-item .note .fa-pull-left.artifact:before, .publications .pub-item .note .fa-pull-left.award:before, .curatedlist .pub-item .note .fa-pull-left.award:before,
+.fa.fa-pull-left, .publications .pub-item .links a.fa-pull-left.pdf:before, .publications .pub-item .links a.fa-pull-left.talk:before, .publications .pub-item .links a.fa-pull-left.code:before, .publications .pub-item .links a.fa-pull-left.link:before, .curatedlist .pub-item .links a.fa-pull-left.pdf:before, .curatedlist .pub-item .links a.fa-pull-left.talk:before, .curatedlist .pub-item .links a.fa-pull-left.code:before, .curatedlist .pub-item .links a.fa-pull-left.link:before, .publications .pub-item .note .fa-pull-left.artifact:before, .curatedlist .pub-item .note .fa-pull-left.artifact:before, .publications .pub-item .note .fa-pull-left.award:before, .curatedlist .pub-item .note .fa-pull-left.award:before, .about .shout .links a.fa-pull-left.pdf:before,
 .fas.fa-pull-left,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
   margin-right: 0.3em;
 }
-.fa.fa-pull-right, .publications .pub-item .links a.fa-pull-right.pdf:before, .publications .pub-item .links a.fa-pull-right.talk:before, .publications .pub-item .links a.fa-pull-right.code:before, .publications .pub-item .links a.fa-pull-right.link:before, .curatedlist .pub-item .links a.fa-pull-right.pdf:before, .curatedlist .pub-item .links a.fa-pull-right.talk:before, .curatedlist .pub-item .links a.fa-pull-right.code:before, .curatedlist .pub-item .links a.fa-pull-right.link:before, .publications .pub-item .note .fa-pull-right.artifact:before, .curatedlist .pub-item .note .fa-pull-right.artifact:before, .publications .pub-item .note .fa-pull-right.award:before, .curatedlist .pub-item .note .fa-pull-right.award:before,
+.fa.fa-pull-right, .publications .pub-item .links a.fa-pull-right.pdf:before, .publications .pub-item .links a.fa-pull-right.talk:before, .publications .pub-item .links a.fa-pull-right.code:before, .publications .pub-item .links a.fa-pull-right.link:before, .curatedlist .pub-item .links a.fa-pull-right.pdf:before, .curatedlist .pub-item .links a.fa-pull-right.talk:before, .curatedlist .pub-item .links a.fa-pull-right.code:before, .curatedlist .pub-item .links a.fa-pull-right.link:before, .publications .pub-item .note .fa-pull-right.artifact:before, .curatedlist .pub-item .note .fa-pull-right.artifact:before, .publications .pub-item .note .fa-pull-right.award:before, .curatedlist .pub-item .note .fa-pull-right.award:before, .about .shout .links a.fa-pull-right.pdf:before,
 .fas.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
@@ -6774,7 +6774,7 @@ readers do not read off random characters that represent icons */
   src: url("webfonts/fontawesome/fa-solid-900.eot");
   src: url("webfonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("webfonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("webfonts/fontawesome/fa-solid-900.woff") format("woff"), url("webfonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("webfonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
 }
-.fa, .publications .pub-item .links a.pdf:before, .publications .pub-item .links a.talk:before, .publications .pub-item .links a.code:before, .publications .pub-item .links a.link:before, .curatedlist .pub-item .links a.pdf:before, .curatedlist .pub-item .links a.talk:before, .curatedlist .pub-item .links a.code:before, .curatedlist .pub-item .links a.link:before, .publications .pub-item .note .artifact:before, .curatedlist .pub-item .note .artifact:before, .publications .pub-item .note .award:before, .curatedlist .pub-item .note .award:before,
+.fa, .publications .pub-item .links a.pdf:before, .publications .pub-item .links a.talk:before, .publications .pub-item .links a.code:before, .publications .pub-item .links a.link:before, .curatedlist .pub-item .links a.pdf:before, .curatedlist .pub-item .links a.talk:before, .curatedlist .pub-item .links a.code:before, .curatedlist .pub-item .links a.link:before, .publications .pub-item .note .artifact:before, .curatedlist .pub-item .note .artifact:before, .publications .pub-item .note .award:before, .curatedlist .pub-item .note .award:before, .about .shout .links a.pdf:before,
 .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -7231,7 +7231,7 @@ progress {
   display: none !important;
 }
 
-.lead {
+.lead, .about .shout {
   font-size: 1.25rem;
   font-weight: 300;
 }
@@ -7890,51 +7890,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-sm-0,
-.gx-sm-0 {
+  .gx-sm-0 {
     --bs-gutter-x: 0;
   }
   .g-sm-0,
-.gy-sm-0 {
+  .gy-sm-0 {
     --bs-gutter-y: 0;
   }
   .g-sm-1,
-.gx-sm-1 {
+  .gx-sm-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-sm-1,
-.gy-sm-1 {
+  .gy-sm-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-sm-2,
-.gx-sm-2 {
+  .gx-sm-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-sm-2,
-.gy-sm-2 {
+  .gy-sm-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-sm-3,
-.gx-sm-3 {
+  .gx-sm-3 {
     --bs-gutter-x: 1rem;
   }
   .g-sm-3,
-.gy-sm-3 {
+  .gy-sm-3 {
     --bs-gutter-y: 1rem;
   }
   .g-sm-4,
-.gx-sm-4 {
+  .gx-sm-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-sm-4,
-.gy-sm-4 {
+  .gy-sm-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-sm-5,
-.gx-sm-5 {
+  .gx-sm-5 {
     --bs-gutter-x: 3rem;
   }
   .g-sm-5,
-.gy-sm-5 {
+  .gy-sm-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -8028,51 +8028,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-md-0,
-.gx-md-0 {
+  .gx-md-0 {
     --bs-gutter-x: 0;
   }
   .g-md-0,
-.gy-md-0 {
+  .gy-md-0 {
     --bs-gutter-y: 0;
   }
   .g-md-1,
-.gx-md-1 {
+  .gx-md-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-md-1,
-.gy-md-1 {
+  .gy-md-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-md-2,
-.gx-md-2 {
+  .gx-md-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-md-2,
-.gy-md-2 {
+  .gy-md-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-md-3,
-.gx-md-3 {
+  .gx-md-3 {
     --bs-gutter-x: 1rem;
   }
   .g-md-3,
-.gy-md-3 {
+  .gy-md-3 {
     --bs-gutter-y: 1rem;
   }
   .g-md-4,
-.gx-md-4 {
+  .gx-md-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-md-4,
-.gy-md-4 {
+  .gy-md-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-md-5,
-.gx-md-5 {
+  .gx-md-5 {
     --bs-gutter-x: 3rem;
   }
   .g-md-5,
-.gy-md-5 {
+  .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -8166,51 +8166,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-lg-0,
-.gx-lg-0 {
+  .gx-lg-0 {
     --bs-gutter-x: 0;
   }
   .g-lg-0,
-.gy-lg-0 {
+  .gy-lg-0 {
     --bs-gutter-y: 0;
   }
   .g-lg-1,
-.gx-lg-1 {
+  .gx-lg-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-lg-1,
-.gy-lg-1 {
+  .gy-lg-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-lg-2,
-.gx-lg-2 {
+  .gx-lg-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-lg-2,
-.gy-lg-2 {
+  .gy-lg-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-lg-3,
-.gx-lg-3 {
+  .gx-lg-3 {
     --bs-gutter-x: 1rem;
   }
   .g-lg-3,
-.gy-lg-3 {
+  .gy-lg-3 {
     --bs-gutter-y: 1rem;
   }
   .g-lg-4,
-.gx-lg-4 {
+  .gx-lg-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-lg-4,
-.gy-lg-4 {
+  .gy-lg-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-lg-5,
-.gx-lg-5 {
+  .gx-lg-5 {
     --bs-gutter-x: 3rem;
   }
   .g-lg-5,
-.gy-lg-5 {
+  .gy-lg-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -8304,51 +8304,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-xl-0,
-.gx-xl-0 {
+  .gx-xl-0 {
     --bs-gutter-x: 0;
   }
   .g-xl-0,
-.gy-xl-0 {
+  .gy-xl-0 {
     --bs-gutter-y: 0;
   }
   .g-xl-1,
-.gx-xl-1 {
+  .gx-xl-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-xl-1,
-.gy-xl-1 {
+  .gy-xl-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-xl-2,
-.gx-xl-2 {
+  .gx-xl-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-xl-2,
-.gy-xl-2 {
+  .gy-xl-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-xl-3,
-.gx-xl-3 {
+  .gx-xl-3 {
     --bs-gutter-x: 1rem;
   }
   .g-xl-3,
-.gy-xl-3 {
+  .gy-xl-3 {
     --bs-gutter-y: 1rem;
   }
   .g-xl-4,
-.gx-xl-4 {
+  .gx-xl-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-xl-4,
-.gy-xl-4 {
+  .gy-xl-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-xl-5,
-.gx-xl-5 {
+  .gx-xl-5 {
     --bs-gutter-x: 3rem;
   }
   .g-xl-5,
-.gy-xl-5 {
+  .gy-xl-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -8442,51 +8442,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-xxl-0,
-.gx-xxl-0 {
+  .gx-xxl-0 {
     --bs-gutter-x: 0;
   }
   .g-xxl-0,
-.gy-xxl-0 {
+  .gy-xxl-0 {
     --bs-gutter-y: 0;
   }
   .g-xxl-1,
-.gx-xxl-1 {
+  .gx-xxl-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-xxl-1,
-.gy-xxl-1 {
+  .gy-xxl-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-xxl-2,
-.gx-xxl-2 {
+  .gx-xxl-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-xxl-2,
-.gy-xxl-2 {
+  .gy-xxl-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-xxl-3,
-.gx-xxl-3 {
+  .gx-xxl-3 {
     --bs-gutter-x: 1rem;
   }
   .g-xxl-3,
-.gy-xxl-3 {
+  .gy-xxl-3 {
     --bs-gutter-y: 1rem;
   }
   .g-xxl-4,
-.gx-xxl-4 {
+  .gx-xxl-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-xxl-4,
-.gy-xxl-4 {
+  .gy-xxl-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-xxl-5,
-.gx-xxl-5 {
+  .gx-xxl-5 {
     --bs-gutter-x: 3rem;
   }
   .g-xxl-5,
-.gy-xxl-5 {
+  .gy-xxl-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -8934,7 +8934,7 @@ progress {
   color: #fff;
 }
 
-.badge, .publications .pub-item .links a, .curatedlist .pub-item .links a {
+.badge, .publications .pub-item .links a, .curatedlist .pub-item .links a, .about .shout .links a {
   display: inline-block;
   padding: 0.35em 0.65em;
   font-size: 0.75em;
@@ -8946,13 +8946,112 @@ progress {
   vertical-align: baseline;
   border-radius: 0.25rem;
 }
-.badge:empty, .publications .pub-item .links a:empty, .curatedlist .pub-item .links a:empty {
+.badge:empty, .publications .pub-item .links a:empty, .curatedlist .pub-item .links a:empty, .about .shout .links a:empty {
   display: none;
 }
 
-.btn .badge, .btn .publications .pub-item .links a, .publications .pub-item .links .btn a, .btn .curatedlist .pub-item .links a, .curatedlist .pub-item .links .btn a {
+.btn .badge, .btn .publications .pub-item .links a, .publications .pub-item .links .btn a, .btn .curatedlist .pub-item .links a, .curatedlist .pub-item .links .btn a, .btn .about .shout .links a, .about .shout .links .btn a {
   position: relative;
   top: -1px;
+}
+
+.alert, .about .shout {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+.alert-link {
+  font-weight: 700;
+}
+
+.alert-dismissible {
+  padding-right: 3rem;
+}
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+}
+
+.alert-primary {
+  color: #7a2d0d;
+  background-color: #f5dbd0;
+  border-color: #efc9b9;
+}
+.alert-primary .alert-link {
+  color: #62240a;
+}
+
+.alert-secondary {
+  color: #41464b;
+  background-color: #e2e3e5;
+  border-color: #d3d6d8;
+}
+.alert-secondary .alert-link {
+  color: #34383c;
+}
+
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+.alert-success .alert-link {
+  color: #0c4128;
+}
+
+.alert-info, .about .shout {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+}
+.alert-info .alert-link, .about .shout .alert-link {
+  color: #04414d;
+}
+
+.alert-warning {
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+}
+.alert-warning .alert-link {
+  color: #523e02;
+}
+
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+.alert-danger .alert-link {
+  color: #6a1a21;
+}
+
+.alert-light {
+  color: #636464;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+}
+.alert-light .alert-link {
+  color: #4f5050;
+}
+
+.alert-dark {
+  color: #141619;
+  background-color: #d3d3d4;
+  border-color: #bcbebf;
+}
+.alert-dark .alert-link {
+  color: #101214;
 }
 
 .clearfix::after {
@@ -10150,7 +10249,7 @@ progress {
   text-align: right !important;
 }
 
-.text-center {
+.text-center, .about .shout {
   text-align: center !important;
 }
 
@@ -12978,6 +13077,26 @@ main {
 }
 .about .contact-more .ai, .about .contact-more .publications .pub-item .links a.arxiv:before, .publications .pub-item .links .about .contact-more a.arxiv:before, .about .contact-more .publications .pub-item .links a.doi:before, .publications .pub-item .links .about .contact-more a.doi:before, .about .contact-more .publications .pub-item .links a.zenodo:before, .publications .pub-item .links .about .contact-more a.zenodo:before, .about .contact-more .curatedlist .pub-item .links a.arxiv:before, .curatedlist .pub-item .links .about .contact-more a.arxiv:before, .about .contact-more .curatedlist .pub-item .links a.doi:before, .curatedlist .pub-item .links .about .contact-more a.doi:before, .about .contact-more .curatedlist .pub-item .links a.zenodo:before, .curatedlist .pub-item .links .about .contact-more a.zenodo:before, .about .contact-more .fab, .about .contact-more .fas {
   padding: 0rem 0.2rem;
+}
+.about .shout {
+  background-color: #e7ebcc;
+  border-color: #b6c266;
+}
+.about .shout .links {
+  margin-top: 0.5rem;
+}
+.about .shout .links a {
+  background: #859900;
+  color: #fdf8e9;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+}
+.about .shout .links a:empty {
+  display: inline-block;
+}
+.about .shout .links a.pdf:before {
+  padding-right: 0.4rem;
+  content: "\f1c1";
 }
 
 .publications .pub-item, .curatedlist .pub-item {
