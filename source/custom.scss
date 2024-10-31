@@ -153,7 +153,8 @@ main {
 
 		&:hover, &:hover a { color: $link-hover-color; }
 		span.phone::before { content: "+1 (212) "; }
-		span.email::after { content: "(at) nyu.edu"; white-space: nowrap; }
+		span.email-nyu::after { content: "(at) nyu.edu"; white-space: nowrap; }
+		span.email-wolff::after { content: "(at) wolff.onl"; white-space: nowrap; }
 		// span.email::after { content: "@nyu.edu"; }
 		address { margin: 0; }
 
